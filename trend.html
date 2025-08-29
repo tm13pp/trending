@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muteluv Tweet Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6f0;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4081;
+    }
+    .tweet-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+    .tweet-card {
+      width: 100%;
+      max-width: 500px;
+      background-color: #fff;
+      border: 2px solid #ff4081;
+      border-radius: 12px;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tweet-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+    .tweet-text {
+      white-space: pre-line;
+      text-align: left;
+      font-size: 14px;
+      margin-right: 10px;
+      flex: 1;
+    }
+    button {
+      padding: 5px 10px;
+      background-color: #d9b3ff; /* สีม่วงอ่อน */
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    button:hover {
+      background-color: #c084ff; /* สีม่วงเข้มขึ้นเวลาชี้ */
+    }
+  </style>
+</head>
+<body>
+  <h1>Muteluv Tweet Template</h1>
+
+  <div class="tweet-container" id="tweets"></div>
+
+  <script>
+    const tweetData = [
+      ["ทุกคนมาช่วยกันดันเทรนด์น้าาา 💕", "Muteluv", "MawinErr"],
+      ["อีกไม่กี่ชั่วโมงยอดจะปิดแล้ว!", "Muteluv", "TrendBoost"],
+      ["ซีรีส์สนุกมากกก ห้ามพลาด!", "Muteluv", "DontMissIt"],
+      ["รีบมาแชร์และบูมแท็กกันเร็ววว 🎉", "Muteluv", "MawinErr"],
+      ["วันนี้ต้องปังสุด ๆ 💫", "Muteluv", "FanPower"]
+    ];
+
+    const container = document.getElementById('tweets');
+
+    tweetData.forEach((row) => {
+      const card = document.createElement('div');
+      card.className = 'tweet-card';
+
+      const textDiv = document.createElement('div');
+      textDiv.className = 'tweet-text';
+      textDiv.textContent = `${row[0]}\n#${row[1]}\n#${row[2]}`;
+      card.appendChild(textDiv);
+
+      const btn = document.createElement('button');
+      btn.textContent = 'Tweet Now';
+      btn.onclick = () => {
+        const text = `${row[0]}\n#${row[1]}\n#${row[2]}`;
+        const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
+        window.open(url, '_blank');
+      };
+
+      card.appendChild(btn);
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
+

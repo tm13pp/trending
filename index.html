@@ -35,25 +35,30 @@
     }
     /* Tabs */
     .tabs {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;      /* ให้แท็บขึ้นบรรทัดใหม่ */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
     }
+
     .tab {
-      padding: 8px 15px;
-      border-radius: 8px;
-      border: 2px solid #ca7ce9;
-      background: #fff;
-      cursor: pointer;
-      font-weight: bold;
-      color: #ca7ce9;
-      transition: 0.2s;
-    }
-    .tab.active, .tab:hover {
-      background: #ca7ce9;
-      color: #fff;
-    }
+    flex: 1 1 120px;      /* ให้กินพื้นที่ยืดหยุ่น แต่ไม่ต่ำกว่า 120px */
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 2px solid #ca7ce9;
+    background: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ca7ce9;
+    transition: 0.2s;
+  }
+
+  .tab.active, .tab:hover {
+    background: #ca7ce9;
+    color: #fff;
+  }
 
     /* Tweet Cards */
     .tweet-container {
@@ -668,6 +673,7 @@
   </script>
 </body>
 </html>
+
 
 
 

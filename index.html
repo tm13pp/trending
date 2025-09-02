@@ -55,8 +55,23 @@
     transition: 0.2s;
   }
 
-  .tab.active, .tab:hover {
+  .tab.thai {
+    border: 2px solid #ca7ce9;
+    background: #fff;
+    color: #ca7ce9;
+  }
+  .tab.thai.active, .tab.thai:hover {
     background: #ca7ce9;
+    color: #fff;
+  }
+
+  .tab.eng {
+    border: 2px solid #4cafef;
+    background: #fff;
+    color: #4cafef;
+  }
+  .tab.eng.active, .tab.eng:hover {
+    background: #4cafef;
     color: #fff;
   }
 
@@ -90,7 +105,7 @@
     }
     button {
       padding: 7px 12px;
-      background-color: #d9b3ff;
+      background-color: #f76fcc;
       color: #fff;
       border: none;
       border-radius: 6px;
@@ -100,24 +115,30 @@
       white-space: nowrap;
     }
     button:hover {
-      background-color: #c084ff;
+      background-color: #ff4081;
     }
   </style>
 </head>
 <body>
   <h1>MuTeLuv</h1>
   <h3>"Hi" By My Luck</h3>
-  <h4>BOOM💣 12 AM | 14 AM | 17 AM</h4>
+  <h4>BOOM💣 12 AM | 2 PM | 4 PM</h4>
   <h5>by @puppymedy</h5>
 
   <!-- Tabs -->
   <div class="tabs">
-    <div class="tab active" onclick="switchTab('general')">before 20:30 pm</div>
-    <div class="tab" onclick="switchTab('Trend')">Trend ⭐</div>
-    <div class="tab" onclick="switchTab('MawinErr')">MawinErr 💖</div>
-    <div class="tab" onclick="switchTab('SeaKeen')">SeaKeen 🌸</div>
-    <div class="tab" onclick="switchTab('EP2')">EP 2 ✨</div>
-    <div class="tab" onclick="switchTab('Replay')">Replay 🎬</div>
+    <div class="tab th active" onclick="switchTab('general')">before 20:30 pm</div>
+    <div class="tab th" onclick="switchTab('Trend')">Trend ⭐</div>
+    <div class="tab th" onclick="switchTab('MawinErr')">MawinErr 💖</div>
+    <div class="tab th" onclick="switchTab('SeaKeen')">SeaKeen 🌸</div>
+    <div class="tab th" onclick="switchTab('EP2')">EP 2 ✨</div>
+    <div class="tab th" onclick="switchTab('Replay')">Replay 🎬</div>
+    <div class="tab eng" onclick="switchTab('eng1')">Trend (en)</div>
+    <div class="tab eng" onclick="switchTab('eng2')">MawinErr (en)</div>
+    <div class="tab eng" onclick="switchTab('eng3')">SeaKeen (en)</div>
+    <div class="tab eng" onclick="switchTab('eng4')">EP 2 (en)</div>
+    <div class="tab eng" onclick="switchTab('eng4')">EP 2 (en)</div>
+
   </div>
 
   <div class="tweet-container" id="tweets"></div>
@@ -631,6 +652,313 @@
           "ใครดูย้อนหลังแล้วเหมือนเรา ยกมือหน่อย 💓",
           "ตามไปดูย้อนหลังอีกครั้งก็ยังสนุก 💗",
           "รีบเลยนะทุกคน ย้อนหลังคือดีมาก 💝"
+],
+      eng1 : [
+          "Everyone let’s help trend together 💖",
+          "Let’s push the tag higher today!",
+          "Don’t forget to tweet and help trend 💕",
+          "Let’s make it big together ✨",
+          "Help tweet a lot guys 💗",
+          "Come join and push the trend 💖",
+          "Let’s join forces and trend this!",
+          "Keep trending, don’t stop 🥰",
+          "Help boost the tag higher 💕",
+          "We can do it together 💖",
+          "Support by tweeting more ✨",
+          "Please retweet and like a lot 💗",
+          "Let’s trend for them with all our hearts 💕",
+          "The goal is to reach the top trend 💖",
+          "Push the tag higher and higher ✨",
+          "We want to see the tag at the top 💕",
+          "Join and make it trend 💖",
+          "Full power, let’s trend together 💗",
+          "Everyone, give it your best 💕",
+          "Let’s all push the trend as one ✨",
+          "Don’t stop tweeting, keep going 💖",
+          "The more we tweet, the higher we go 💕",
+          "Retweet if you see this 💗",
+          "Help make this trend big 💕",
+          "One like, one retweet, it helps 💖",
+          "Trending together, let’s go ✨",
+          "Push for the tag to shine 💗",
+          "Help them get on top trends 💕",
+          "Tweet together for more power 💖",
+          "Let’s make the tag strong today 💗",
+          "Spread the love with this tag 💕",
+          "Keep going, don’t give up 💖",
+          "We’ll get to the top together ✨",
+          "Make this tag shine bright 💗",
+          "Tweet with all your love 💕",
+          "Boost the trend higher and higher 💖",
+          "Together, we can do it 💕",
+          "Help keep the tag alive 💗",
+          "Tweet, retweet, and support 💕",
+          "The tag deserves to shine 💖",
+          "Everyone, let’s unite and trend ✨",
+          "Send love through the trend 💗",
+          "We can push the tag to the top 💕",
+          "Help make the hashtag big 💖",
+          "Tweet and trend nonstop 💗",
+          "The tag is love, let’s show it 💕",
+          "Push harder everyone 💖",
+          "Let’s make it unforgettable ✨",
+          "Trend together and shine 💗"
+],
+      eng2 : [
+          "Err is so cute today ❤️",
+          "Mawin looks so handsome this episode 💕",
+          "Err is just the sweetest ever 💖",
+          "Mawin shining on screen ✨",
+          "Err so adorable I can’t handle it ❤️",
+          "Mawin so charming this ep 💕",
+          "Err is seriously too cute 💖",
+          "Mawin really looks amazing today ✨",
+          "Err smile makes everything better ❤️",
+          "Mawin handsome level 100 💕",
+          "Err’s cuteness is unbeatable 💖",
+          "Mawin the perfect lead ✨",
+          "Err makes my heart melt ❤️",
+          "Mawin is glowing this scene 💕",
+          "Err’s acting is so natural 💖",
+          "Mawin really stole the show ✨",
+          "Err is shining so bright ❤️",
+          "Mawin looks even cooler this time 💕",
+          "Err cutest person ever 💖",
+          "Mawin is heartthrob material ✨",
+          "Err is just perfect ❤️",
+          "Mawin’s smile kills me 💕",
+          "Err looks amazing today 💖",
+          "Mawin is so good in this role ✨",
+          "Err cuteness overload ❤️",
+          "Mawin is totally stunning 💕",
+          "Err is precious 💖",
+          "Mawin really nailed this ep ✨",
+          "Err’s charm is endless ❤️",
+          "Mawin too good looking 💕",
+          "Err deserves all the love 💖",
+          "Mawin is perfect on screen ✨",
+          "Err is glowing ❤️",
+          "Mawin’s presence is powerful 💕",
+          "Err acting so well 💖",
+          "Mawin is so lovable ✨",
+          "Err is the cutest ever ❤️",
+          "Mawin just too handsome 💕",
+          "Err makes every scene better 💖",
+          "Mawin is flawless ✨",
+          "Err is amazing ❤️",
+          "Mawin looks incredible 💕",
+          "Err is adorable every second 💖",
+          "Mawin perfect visual ✨",
+          "Err makes me so happy ❤️",
+          "Mawin slaying this role 💕",
+          "Err is an angel 💖",
+          "Mawin so good this episode ✨",
+          "Err cuteness nonstop ❤️"
+],
+      eng3 : [
+          "Sea and Keen are amazing, so proud 💖",
+          "Sea and Keen acted really well today, love it!",
+          "Their chemistry is so good, I’m melting",
+          "They’ve improved a lot, so proud of them",
+          "Every scene is full of cuteness 🥰",
+          "The two acted so well, totally into it today",
+          "Sea and Keen are adorably bright and cheerful",
+          "Sea and Keen improved so much, so cute",
+          "Their chemistry is perfect, I smiled the whole time",
+          "Acting so good, can’t stop smiling",
+          "Today’s acting is top-notch, so impressed",
+          "Sea and Keen’s pair is the best today 💕",
+          "Acting is cute and super realistic",
+          "Seeing their progress makes me so happy",
+          "Their chemistry is amazing, Sea and Keen are perfect together",
+          "They really improved, so admirable",
+          "Sea and Keen improved so much, so cute",
+          "Acted so well, Sea and Keen",
+          "Adorable in every scene, so enjoyable",
+          "Sea and Keen are truly adorable 💗",
+          "Sea and Keen’s acting keeps improving, so proud",
+          "Every scene makes me smile, they are amazing",
+          "So fun, want to watch it again and again",
+          "So cute, Sea and Keen are the best",
+          "Every scene is heartwarming",
+          "They’ve improved a lot, so skilled",
+          "Sea and Keen’s acting is really good",
+          "Acting is so immersive, really into it",
+          "Their chemistry is so cute",
+          "Today we got full cuteness, so skilled",
+          "Everyone must see this cuteness!",
+          "Skills keep improving, so adorable",
+          "So good, smiling the whole episode",
+          "Feels so warm watching them",
+          "Acting is very natural, so admirable",
+          "Every scene makes you smile",
+          "Their chemistry is too cute to handle",
+          "Improved a lot, truly skilled",
+          "Acted so well, heart is full",
+          "So immersed in the story because of their acting",
+          "Too cute to resist",
+          "So proud of them",
+          "Acted so well, can’t stop talking about it",
+          "Every episode is even cuter",
+          "Their chemistry is adorable",
+          "Acting so good, want to clap loudly",
+          "Every scene is too fun",
+          "They did everything really well",
+          "Can’t wait for the next, Sea and Keen are adorable",
+          "Sea and Keen are skilled and cute",
+          "Sea and Keen acted so well today, proud 💕",
+          "Acting better than expected, so skilled 💖",
+          "Every scene is heartwarming 🥰",
+          "So fun, totally proud 💓",
+          "Their chemistry made me smile nonstop 💗",
+          "So skilled, improving every time 👏",
+          "Every scene is overflowing with cuteness 💞",
+          "Acted so well, really immersed ❤️",
+          "So proud of them, truly skilled 💕",
+          "Did an amazing job today 💖",
+          "Sea and Keen acted so well, so happy 💗",
+          "They acted well the entire episode 💓",
+          "Every scene is fun and cute 💞",
+          "Acted so immersively, so skilled 👏",
+          "Sea and Keen are extremely cute today ❤️",
+          "Acted so well, want to watch more 💕",
+          "Sea and Keen acted so adorably 💗",
+          "Everyone must see this cuteness 💖",
+          "Today is the cutest, truly skilled 💓",
+          "Sea and Keen’s chemistry is amazing 💞",
+          "Proud of them every time I see their acting ❤️",
+          "They improve every day 💕",
+          "Every scene is full of cuteness 💗",
+          "Acting is very natural 💖",
+          "Today was so good, want to watch again 💓",
+          "Every episode cuter than expected 💞",
+          "So happy to see this skill ❤️",
+          "Sea and Keen are really cute 💕",
+          "Every episode is excellent 💗",
+          "Acted so immersively today 💖",
+          "Proud to see them acting so well 💓",
+          "Acted so well, deserve loud applause 👏💞",
+          "Today is full of cuteness ❤️",
+          "Every scene is so cute I can’t stop smiling 💕",
+          "Their chemistry is amazing 💗",
+          "They acted really well 💖",
+          "Sea and Keen are so skilled, really impressed 💓",
+          "Acting is cute and excellent 💞",
+          "Every episode is full of cuteness ❤️",
+          "Totally immersed in their acting, did so well 💕",
+          "Sea and Keen are super cute today 💗",
+          "So skilled, wish for great success 💖",
+          "Every scene is heartwarming 💓",
+          "Too cute, melts my heart 💞",
+          "So proud today ❤️",
+          "Acted so well in every scene 💕",
+          "Sea and Keen are the cutest 💗",
+          "Getting better every episode, so happy 💖",
+          "Did an amazing job in every scene 💓"
+],
+      eng4 : [
+          "Don’t miss EP2, it’s so fun right now! 💕",
+          "Episode 2 is getting intense, hurry and watch everyone, don’t lose focus!",
+          "So much fun right now, who do you like first?",
+          "Don’t miss EP2, it’s the ultimate excitement!",
+          "It’s heating up! Watch together quickly!",
+          "Episode 2 is out, can’t stop watching 💗",
+          "Don’t blink, seriously, every moment counts!",
+          "So thrilling, don’t miss this EP2 ✨",
+          "Who loves Mawin, who loves Err, come watch now!",
+          "EP2 is the start of ultimate excitement",
+          "Seriously, don’t miss it, heart-pounding fun 💕",
+          "Invite your friends to watch together, this moment is the best!",
+          "Episode 2 is amazing, hurry and watch",
+          "So thrilling you’ll clutch your pillow, don’t miss EP2!",
+          "It’s getting super intense right now 🥰",
+          "Don’t miss EP2, or you won’t understand the chat with friends",
+          "So fun I had to scream, don’t miss this episode 💗",
+          "Who’s waiting to see this pair? Totally worth it",
+          "Episode 2 is a must-watch",
+          "Don’t miss it! EP2 is the real deal!",
+          "So fun it melts your heart, watch now everyone 💕",
+          "Who likes who first? You have to see EP2!",
+          "Don’t miss EP2, the vibe is just right",
+          "This is truly the best of the best",
+          "Invite friends to watch together, don’t miss EP2!",
+          "Episode 2 is insanely fun 💗",
+          "If you haven’t watched yet, you’re missing out",
+          "Don’t miss EP2, it’s so thrilling right now",
+          "EP2 is heart-pounding fun, come watch!",
+          "Team Mawin or Team Err? You have to watch 💕",
+          "Don’t miss it, right now is peak excitement",
+          "EP2 is so fun you’ll forget to breathe 🥰",
+          "Don’t blink in this episode",
+          "So fun I can’t stop smiling, don’t miss it 💗",
+          "This is a must-watch, it’s so good right now!",
+          "EP2 is the ultimate thrill",
+          "Don’t miss this, it’s super cute 💕",
+          "It’s so fun right now, don’t miss it 💕",
+          "Invite friends to watch together, it’s so fun!",
+          "EP2 is so fun you’ll want to share it, don’t miss it!",
+          "This episode is Mawin & Err, who wins? Watch it yourself!",
+          "Don’t miss EP2, it’s more fun than expected",
+          "It’s so fun right now, hurry and watch",
+          "Every scene is exciting, don’t miss it 💗",
+          "EP2 is crazy fun, anyone not watching is missing out",
+          "Episode 2 is a must, don’t skip it",
+          "You have to watch live right now!",
+          "Don’t miss EP2, it’s irresistibly fun",
+          "This episode is amazing, so thrilling 💕",
+          "It’s intense right now, don’t miss it!"
+],
+      eng5 : [
+          "If you missed the live, catch the replay now! It’s so fun 💖",
+          "This moment is amazing! If you haven’t watched, hurry and watch the replay 💕",
+          "If you haven’t seen the replay yet, do it now, it’s so thrilling 💓",
+          "This episode is a must-watch! Missed the live? Watch the replay 💗",
+          "Gotta say, this moment is so cute! If you haven’t seen it, watch the replay 💝",
+          "Missed the live? No worries, the replay is here and super fun 💖",
+          "If you haven’t watched yet, hurry! Replay is available now 💕",
+          "Let’s catch the replay! This episode is truly fun 💓",
+          "This episode is so exciting! Replay will melt your heart 💗",
+          "Missed the live? Watch the replay and smile the whole episode 💝",
+          "This moment is the best! Catch the replay 💖",
+          "Don’t forget to watch the replay! It’s really fun 💕",
+          "Episode 2 is amazing! Watch the replay now 💓",
+          "Want to scream? Watch the replay, it’s so thrilling 💗",
+          "Missed the live? No problem, watch the replay anytime 💝",
+          "Seriously, don’t miss this episode! The replay is still great 💖",
+          "Invite your friends to watch the replay, it’s super fun 💕",
+          "Err & Mawin are so cute! Catch the replay 💓",
+          "The kids are acting so well! Watch the replay 💗",
+          "Their chemistry is perfect! Haven’t seen it? Watch the replay 💝",
+          "Everyone must watch! Replay is available 💖",
+          "It’s so much fun! Go watch the replay 💕",
+          "This moment is heartwarming! Haven’t seen it? Replay now 💓",
+          "Make sure everyone catches the replay, it’s thrilling 💗",
+          "Let’s watch the replay! It’s really fun, no kidding 💝",
+          "So adorable! Go watch the replay 💖",
+          "Every moment is perfect! Catch the replay 💕",
+          "Don’t want you to miss it! Replay works too 💓",
+          "This moment is the cutest! Watch the replay 💗",
+          "Watched live and want more? Replay it again 💝",
+          "Haven’t felt it yet? Watch the replay and fall in love 💖",
+          "Everyone, catch the replay now! It’s super fun 💕",
+          "This episode is truly the best! Watch the replay 💓",
+          "Watched the replay and my heart is racing 💗",
+          "Catch the replay fast! It’s just as fun as live 💝",
+          "Seriously, don’t miss it! Watch the replay 💖",
+          "The kids acted so well! Replay is heartwarming 💕",
+          "Who’s watched the replay? As thrilling as we thought, right? 💓",
+          "No matter how many times I watch the replay, it’s still cute 💗",
+          "Invite everyone to watch the replay together 💝",
+          "Catch the replay and you’ll love it 💖",
+          "Go watch the replay, it’s so fun you can’t stop smiling 💕",
+          "Worth it! If you haven’t watched, catch the replay 💓",
+          "Can’t miss this! Replay is still great 💗",
+          "Everyone, watch the replay so we can talk about it together 💝",
+          "Watched the replay and totally fell for them 💖",
+          "If you haven’t watched the replay, you’re missing out 💕",
+          "Who watched the replay like me? Raise your hand 💓",
+          "Watching the replay again is still fun 💗",
+          "Hurry everyone, the replay is amazing 💝"
 ]
     };
 
@@ -668,11 +996,12 @@
       renderTweets(category);
     }
 
-    // เริ่มต้นแสดง general
     renderTweets("general");
   </script>
 </body>
 </html>
+
+
 
 
 
